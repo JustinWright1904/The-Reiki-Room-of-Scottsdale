@@ -629,6 +629,23 @@
     white-space: normal;
   }
 
+  .foot-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.foot-contact-link {
+  font-size: 12px;
+  color: var(--text-mid);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.foot-contact-link:hover { color: var(--mauve); }
+
   .foot-right { padding: 56px 60px; display: flex; align-items: center; }
 
   .foot-cta {
@@ -1072,12 +1089,15 @@
   <div class="foot-left">
     <div class="foot-title">Ready when you are.</div>
     <div class="foot-loc">Scottsdale, Arizona · Trauma-Informed · By Appointment Only</div>
+    <div class="foot-contact">
+      <a href="mailto:Kendra@TheReikiRoomScottsdale.com" class="foot-contact-link">Kendra@TheReikiRoomScottsdale.com</a>
+      <a href="tel:+16028557893" class="foot-contact-link">(602) 855-7893</a>
+    </div>
   </div>
   <div class="foot-right">
     <a class="foot-cta" href="https://calendly.com/thereikiroomscottsdale" target="_blank" aria-label="Schedule a session with Kendra on Calendly">Schedule on Calendly</a>
   </div>
 </footer>
-
 <script>
   let cur = 0;
   const slides = document.querySelectorAll('.t-slide');
